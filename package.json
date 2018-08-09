@@ -1,0 +1,20 @@
+{
+  "name": "node-variants-matrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha *.test.js"
+  },
+  "repository": "petrgrishin/node-variants-matrix",
+  "author": "Petr Grishin",
+  "license": "MIT",
+  "homepage": "https://github.com/petrgrishin/node-variants-matrix",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "node-matrix-object": "^1.0.0"
+  }
+}
