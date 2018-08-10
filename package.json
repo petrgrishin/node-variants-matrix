@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha *.test.js",
-    "test:cover": "npx nyc mocha *.test.js",
-    "test:cover:report": "npx nyc report --reporter=text-lcov | npx coveralls"
+    "test": "mocha *.test.js",
+    "test:cover": "nyc mocha *.test.js",
+    "test:cover:report": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": "petrgrishin/node-variants-matrix",
   "author": "Petr Grishin",
