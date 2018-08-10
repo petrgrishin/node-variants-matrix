@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha *.test.js"
+    "test": "npx mocha *.test.js",
+    "test:cover": "npx nyc mocha *.test.js",
+    "test:cover:report": "npx nyc report --reporter=text-lcov | npx coveralls"
   },
   "repository": "petrgrishin/node-variants-matrix",
   "author": "Petr Grishin",
   "license": "MIT",
   "homepage": "https://github.com/petrgrishin/node-variants-matrix",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
     "should": "^13.2.3"
   },
   "dependencies": {
